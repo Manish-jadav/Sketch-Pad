@@ -1,0 +1,57 @@
+body{
+   
+    background-color:white;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.grid {
+    display: flex;
+}
+
+/* .column {
+    flex: ; /* <--- required (style column to fill the same space as the other columns) 
+} */
+
+.row {
+    margin: 1px;
+    border: 2px solid black;
+    border-radius: 0px; 
+    /*text-align:center;*/
+    height: 70px;
+    width: 70px;
+}
+
+.button{
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+}
+.color_picker{
+   
+      
+}
+.Text{
+color: rgb(91, 89, 89);
+font-size: 30px;
+padding: 10px;
+}
+#favcolor{
+    background-color: black;
+    height:100px;
+    width: 100px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+.eraser{
+    font-size: 30px;
+    background-color: gray;
+    margin: 20px;
+    border-radius: 10px;
+}
+
