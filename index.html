@@ -8,18 +8,21 @@
 </head>
 <body>
     <div class="main">
-    <div class="Text">
-        <div><label for="favcolor">Select Color : </label></div>
+        <div class="Sketch_content">SKETCH PAD..</div>
+        <div class="Text">
+            <div class="pick_color_text">
+                <label for="favcolor">Pick Color: </label>
+            </div>
+        </div>
+        <div class="color_picker">
+            <input type="color" name="favcolor" id="favcolor" value="#000000" onchange="mycolor()">
+        </div>
+        <div>
+            <button class="eraser" onclick="eraser()"> Eraser </button>
+        </div>
+        <div class="btn">
+            <button onclick="fun()" class="grid_button">New Grid.. </button>
+        </div>
     </div>
-    <div class="color_picker">
-        <input type="color" name="favcolor" id="favcolor" value="#000000" onchange="mycolor()">
-    </div>
-    <div>
-        <button class="eraser" onclick="eraser()">Eraser</button>
-    </div>
-    <div class="btn">
-        <button onclick="fun()" class="button">New Grid.. </button>
-    </div>
-</div>
 </body>
 </html>
