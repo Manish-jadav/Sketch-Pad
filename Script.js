@@ -1,13 +1,9 @@
-    
-    // $(document).ready(function() {
-    //     createGrid();
-    // });
     document.addEventListener("DOMContentLoaded",function(){
         createGrid(14);
     });
 function createGrid(x) {
-    var columns =x;//("Enter Grid Width :");
-    var rows =x;//prompt("Enter Grid Height :");
+    var columns =x;
+    var rows =x;
 
     var grid = document.createElement('div');
     grid.className = 'grid';
@@ -28,41 +24,22 @@ function createGrid(x) {
 
     $(".row").width(400/rows);
     $(".row").height(400/rows);
-    mfun();
-
-    // var color=document.getElementById('favcolor').value;
-  
-    // $(".row").mouseover(function() {
-    //     $(this).css("background-color",color);
-    
-    //     });
-    
-    // $(".row").click(function() {
-    //     $(this).css("background-color", "white");
-    //     });
+    mycolor();
 }    
-
-function mfun(){
+function mycolor()
+{
     var color=document.getElementById('favcolor').value;
-  
-    $(".row").mouseover(function() {
-        $(this).css("background-color",color);
     
-        });
+            $(".row").mouseover(function() {
+            $(this).css("background-color",color);
     
-    // $(".row").click(function() {
-    //     $(this).css("background-color", "white");
-    //     });
-
+            });    
 }
 function eraser(){
     $(".row").mouseover(function() {
-        $(this).css("background-color", "white");
+         $(this).css("background-color","");
         });
-
 }
-
-
 function fun(){
     $(".grid").remove();
     
@@ -81,11 +58,8 @@ function fun(){
             column.appendChild(row); // append row in column
             
         }
-
         grid.appendChild(column); // append column inside grid
-       
     }
-
     document.body.appendChild(grid);
 
     $(".row").width(400/rows);
